@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cookie Party</title>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+    <body background="assets/css/images/polka-dots.png">
+        <div class="container">
+<!--"header" Jumbotron -->
+            <div class="jumbotron" style="background-color: green; color: white;">
+                <div class="container">
+                    <h1 class="text-center"><strong>Cookie Party!</strong></h1>
+                </div>
+            </div>
+<!-- Instructions Container -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading" style="background-color: green; color:white">
+                            <h3 class="panel-title text-center">Instructions</h3>
+                        </div>
+                        <div class="panel-body" id="rules-area">
+                            <p><large>You will be given a random number at the start of the game. There are four cookies below. By clicking on a cookie you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each cookie is hidden from you until you click on it. Each time when the game starts, the game will change the values of each cookie.</large></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--RandomNumGen-target score, YourScore, Wins, Losses-->
+            <div class="row">	
+                <div class="col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading" style="background-color: #795DBB; color:white">
+                            <h3 class="panel-title text-center">Random Given</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="random-area">0</h3>
+                        </div>
+                    </div>
+                </div>
+  <!-- Your Score panel-->
+                <div class="col-sm-4">
+                  <div class="panel panel-danger">
+                        <div class="panel-heading" style="background-color: #1EACCF; color:white">
+                            <h3 class="panel-title text-center">Your Score</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="score-area">0</h3>
+                        </div>
+                    </div>
+                </div>
+<!-- Game Count -->
+                <div class="col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" style="background-color: #FF69B4; color: white;">
+                            <h3 class="panel-title text-center">Game Count</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center"  id="winArea">0</h3>
+                        </div>
+                    </div> 
+                </div>
+<!-- cookie-area-->
+                <div class="row">
+                  <div class="col-md-12">
+                      <div class="panel panel-danger">
+                        <div class="panel-heading" style="background-color: green; color:white">
+                            <h3 class="panel-title text-center">Sugar Cookies & Sprinkles!</h3>
+                        </div>
+                            <div class="panel-body text-center">
+                                <div id="desserts-area"></div>
+                            </div>
+                    </div>
+                </div> 
+        </div>
+<!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<!-- Main Game Logic  -->
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
